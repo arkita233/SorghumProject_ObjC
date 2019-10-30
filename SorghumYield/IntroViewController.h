@@ -10,7 +10,7 @@
 #import "BaseViewController.h"
 #import "FirebaseAuthUI.h"
 
-@interface IntroViewController : BaseViewController
+@interface IntroViewController : BaseViewController <FUIAuthDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *BtnGetStarted;
 @property (nonatomic, strong) FUIAuth *authUI;
 @property (weak, nonatomic) IBOutlet UIButton *BtnLogin;

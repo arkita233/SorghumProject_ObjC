@@ -9,7 +9,7 @@
 class LoginTests : KIFTestCase {
     func testLoginWithExistingAccount(){
         tapButton(buttonName: "loginButton")
-        var app = XCUIApplication()
+        let app = XCUIApplication()
         app.tables.textFields["Enter your email"].typeText("test@test.com")
     }
     
