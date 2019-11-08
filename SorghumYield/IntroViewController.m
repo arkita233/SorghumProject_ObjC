@@ -29,7 +29,7 @@ FUIAuth *authUI;
     // Check if user's login
     if(!auth.currentUser){
         auth = [FIRAuth auth];
-        FUIAuth.defaultAuthUI.shouldHideCancelButton = true; // Disable back button on FirebaseUI sign in page
+        FUIAuth.defaultAuthUI.shouldHideCancelButton = false; // Disable back button on FirebaseUI sign in page
         authUI = [FUIAuth defaultAuthUI];
         authUI.delegate = self;
         UINavigationController *authViewController = [authUI authViewController];
