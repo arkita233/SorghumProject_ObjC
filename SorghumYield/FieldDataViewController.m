@@ -100,7 +100,7 @@
             return 3;
             break;
         default:
-            return 50;
+            return 100;
             break;
     }
 }
