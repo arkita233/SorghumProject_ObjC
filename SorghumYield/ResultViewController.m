@@ -79,7 +79,7 @@ static NSString * baseText = @"Seeds per pound = ";
     [self setGrainsPerPlant:[NSNumber numberWithInt:(int)((113.6 * [_appAreaAverage floatValue]) + 236.38f) ]];
     
     int headsPerAcreRow = [[self.managedObject valueForKey:@"headsPerThousandth"] intValue];
-    NSNumber *  rowsPerAcre = [self.managedObject valueForKey:@"rowSpacing"];
+    //NSNumber *  rowsPerAcre = [self.managedObject valueForKey:@"rowSpacing"];
     
     NSNumber * headsPerAcre = [NSNumber numberWithInt:(1000 * headsPerAcreRow)];
     

@@ -29,7 +29,7 @@
 }
 -(void)setupDatabase{
     [FIRApp configure];
-    FUIAuth *authUI = [FUIAuth defaultAuthUI];
+    //FUIAuth *authUI = [FUIAuth defaultAuthUI];
     [[FIRAuth auth] signInAnonymouslyWithCompletion:^(FIRAuthDataResult *dataResult, NSError *error) {
          if(error != nil){
          }
@@ -66,7 +66,7 @@
     FIRStorage *storage = [FIRStorage storage];
 
     // Create a storage reference from our storage service
-    FIRFirestore *defaultFirestore = [FIRFirestore firestore];
+    //FIRFirestore *defaultFirestore = [FIRFirestore firestore];
     
     // Connect to extension platform firestore
     FIRStorageReference *storageRef = [storage referenceForURL:@"gs://extension-database-81ebc.appspot.com"];
